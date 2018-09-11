@@ -10,9 +10,6 @@ folders = ['vsphere', 'aws']
 for fold in folders:
     files = os.listdir(fold)
 
-    # filter only reply
-    files = [fn for fn in files if 'retry' in fn]
-
     df = None
     for fn in files:
         if df is None:
